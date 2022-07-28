@@ -1,0 +1,27 @@
+<svg viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
+  <!-- Some graphical objects to use -->
+  <defs>
+    <circle id="myCircle" cx="0" cy="0" r="5" />
+
+    <linearGradient id="myGradient" gradientTransform="rotate(90)">
+      <stop offset="20%" stop-color="gold" />
+      <stop offset="90%" stop-color="red" />
+    </linearGradient>
+
+    <style>
+      svg {
+        background-color: white;
+        color-scheme:light dark;
+      }
+      @media (prefers-color-scheme:dark) {
+        svg {
+          background-color: black;
+        }
+      }
+    </style>
+  </defs>
+
+  <!-- using my graphical objects -->
+  <use x="5" y="5" href="#myCircle" fill="url('#myGradient')" />
+</svg>
+
